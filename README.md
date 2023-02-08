@@ -6,6 +6,7 @@ A set of behaviours for handling messages and events based on the Message Behavi
 [com.postegames.autonomousentities](https://github.com/Slugronaut/Toolbox-AutonomousEntities)  
 [com.postegames.eventbehaviourframework](https://github.com/Slugronaut/Toolbox-EventBehaviourFramework)  
 [com.postegames.hashedstring](https://github.com/Slugronaut/Toolbox-HashedString)  
+[com.postegames.instantiabletype]()  
 [com.postegames.lazarus](https://github.com/Slugronaut/Lazarus)  
 [com.postegames.mathutils](https://github.com/Slugronaut/Toolbox-MathUtils)  
 [com.postegames.messagebehaviourframework](https://github.com/Slugronaut/Toolbox-MessageBehaviourFramework)  
