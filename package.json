@@ -1,0 +1,34 @@
+{
+  "name": "com.postegames.advancedbehaviours",
+  "version": "1.0.0",
+  "displayName": "PEGGAME - Advanced Behaviours",
+  "description": "A set of behaviours for handling messages and events based on the Message Behaviour Framework.",
+  "unity": "2022.2",
+  "keywords": [
+    "toolbox",
+    "events",
+    "messages",
+    "behaviour",
+    "framework"
+  ],
+  "author": {
+    "name": "Sluggy",
+    "email": "jcsluggy@gmail.com",
+    "url": "http:/postegames.com"
+  },
+  "dependencies": {
+    "com.postegames.autocreatable": "",
+    "com.postegames.autonomousentities": "",
+    "com.postegames.eventbehaviourframework": "",
+    "com.postegames.hashedstring": "",
+    "com.postegames.instantiabletype": "",
+    "com.postegames.lazarus": "",
+    "com.postegames.mathutils": "1.0.0",
+    "com.postegames.messagebehaviourframework": "",
+    "com.postegames.messagedispatcher": "",
+    "com.postegames.sharedenums": "",
+    "com.postegames.toolboxcorelib": "",
+    "com.postegames.typehelper": "",
+    "com.postegames.unityextensions": ""
+  }
+}
