@@ -4,7 +4,7 @@ namespace Toolbox.Behaviours
 {
     /// <summary>
     /// Attach to a GameObject that you want to teleport to
-    /// the target of a <see cref="LocalPlayerAvatarSpawnedEvent"/>> event.
+    /// the target of a <see cref="LocalPlayerAvatarSpawnedEvent"/> event.
     /// </summary>
     [UnityEngine.AddComponentMenu("Toolbox/Action Triggers/Move to Avatar on Spawn")]
     public class MoveToPlayerOnSpawn : AttachToPlayerOnSpawn

@@ -46,17 +46,28 @@ namespace Toolbox.Behaviours
             SceneManager.sceneUnloaded += SceneUnloaded;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         protected override void OnDestroy()
         {
             base.OnDestroy();
             if(Posted) GlobalMessagePump.Instance.PostMessage(new LocalPlayerAvatarRemovedEvent(gameObject, PlayerId));
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         protected override LocalPlayerAvatarSpawnedEvent ActivateMsg()
         {
             return new LocalPlayerAvatarSpawnedEvent(gameObject, PlayerId);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="scene"></param>
         void SceneUnloaded(Scene scene)
         {
             CleanupMessage();
