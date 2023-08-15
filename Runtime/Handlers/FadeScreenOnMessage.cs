@@ -1,20 +1,14 @@
-﻿using Sirenix.OdinInspector;
+using System;
+using Toolbox.Messaging;
 using UnityEngine;
+using static Toolbox.Behaviours.FadeScreenOnEvent;
 using UnityEngine.Events;
+using Sirenix.OdinInspector;
 
-namespace Toolbox.Behaviours
+namespace Toolbox
 {
-    /// <summary>
-    /// Used to transition to new scenes with smooth effects like screen fade and BGM corssfade.
-    /// </summary>
-    public class FadeScreenOnEvent : AbstractOperationOnEvent
+    public class FadeScreenOnMessage : AbstractMessageReciever
     {
-        public enum FadeDirections
-        {
-            FadeTo,
-            FadeFrom,
-        }
-
         [Space(5)]
         [Title("Fade Settings")]
         public FadeDirections Direction;
@@ -23,11 +17,10 @@ namespace Toolbox.Behaviours
         [Tooltip("Does pressing any button (but not axis) skip the fade effect?")]
         public bool AnyButtonSkips;
         public UnityEvent OnFadeComplete = new UnityEvent();
-        
+
         System.Action CachedCallback;
 
-
-        public override void PerformOp()
+        protected override void HandleMessage(Type msgType, object msg)
         {
             if (Direction == FadeDirections.FadeTo)
                 Fadeout();
@@ -80,6 +73,5 @@ namespace Toolbox.Behaviours
             callback?.Invoke();
             OnFadeComplete.Invoke();
         }
-
     }
 }

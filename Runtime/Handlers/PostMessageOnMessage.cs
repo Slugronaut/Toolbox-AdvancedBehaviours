@@ -2,6 +2,7 @@
 using Toolbox.Attributes;
 using Toolbox.Messaging;
 using UnityEngine;
+using static Toolbox.Messaging.AbstractMessagePoster;
 
 namespace Toolbox.Behaviours
 {
@@ -12,13 +13,6 @@ namespace Toolbox.Behaviours
     public class PostMessageOnMessage : AbstractMessageReciever
     {
         #region Snippet from 'AbstractMessagePoster'
-        public enum MessageScope
-        {
-            Local = 1,
-            Global = 2,
-            All = Local | Global,
-        }
-
         [Tooltip("Does this message post on this gameobject's local dispatcher, the global, or both?")]
         public MessageScope Scope = MessageScope.Local;
 
