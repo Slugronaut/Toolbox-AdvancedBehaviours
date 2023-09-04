@@ -1,10 +1,10 @@
 ﻿using System;
-using Toolbox.Attributes;
-using Toolbox.Messaging;
+using Peg.Attributes;
+using Peg.Messaging;
 using UnityEngine;
-using static Toolbox.Messaging.AbstractMessagePoster;
+using static Peg.Messaging.AbstractMessagePoster;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Posts a message when a message is received. This can be used to chain

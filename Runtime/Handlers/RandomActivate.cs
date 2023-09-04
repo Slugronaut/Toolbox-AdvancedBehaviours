@@ -2,7 +2,7 @@
 using System;
 
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Randomly chooses to enable or disable each

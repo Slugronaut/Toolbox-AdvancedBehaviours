@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Simple audio source player that is triggered for a given event.

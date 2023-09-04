@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace Toolbox
+namespace Peg
 {
     /// <summary>
     /// Something is causing a crash in builds when quitting the app. This is a bandaide to fix that by removing

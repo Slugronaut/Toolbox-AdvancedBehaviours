@@ -1,8 +1,8 @@
 ﻿using Sirenix.OdinInspector;
 using UnityEngine;
-using Toolbox.Math;
+using Peg.Lib;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Ultimate sound playing utility.

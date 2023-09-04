@@ -1,9 +1,9 @@
 ﻿using System;
-using Toolbox.Messaging;
+using Peg.Messaging;
 using UnityEngine;
 
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Upon receiving a message, stores all values of a rigibody and then removes it.

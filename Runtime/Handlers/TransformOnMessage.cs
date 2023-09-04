@@ -1,9 +1,9 @@
 ﻿using System;
-using Toolbox.Messaging;
+using Peg.Messaging;
 using UnityEngine;
 
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Translates, rotates, and scales this entity upon receiving a message.

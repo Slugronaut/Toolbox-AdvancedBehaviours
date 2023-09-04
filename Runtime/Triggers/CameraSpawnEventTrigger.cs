@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using Toolbox;
+using Peg;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Attach this component to any camera to make it broadcast
@@ -28,7 +28,7 @@ namespace Toolbox.Behaviours
     }
 }
 
-namespace Toolbox
+namespace Peg
 {
     public class CameraSpawnedEvent : TargetMessage<Camera, CameraSpawnedEvent>, IDeferredMessage, IBufferedMessage
     {

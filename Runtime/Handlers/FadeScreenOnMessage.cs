@@ -1,11 +1,12 @@
 using System;
-using Toolbox.Messaging;
+using Peg.Messaging;
 using UnityEngine;
-using static Toolbox.Behaviours.FadeScreenOnEvent;
+using static Peg.Behaviours.FadeScreenOnEvent;
 using UnityEngine.Events;
 using Sirenix.OdinInspector;
+using Peg.Systems;
 
-namespace Toolbox
+namespace Peg
 {
     public class FadeScreenOnMessage : AbstractMessageReciever
     {

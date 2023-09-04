@@ -1,8 +1,8 @@
 ﻿using System;
-using Toolbox.Messaging;
+using Peg.Messaging;
 using UnityEngine.Events;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Invokes a function when a message is received.

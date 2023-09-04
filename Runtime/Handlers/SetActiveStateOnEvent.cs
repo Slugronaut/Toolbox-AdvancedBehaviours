@@ -1,8 +1,8 @@
-﻿using Toolbox.AutoCreate;
-using Toolbox.Lazarus;
+﻿using Peg.AutoCreate;
+using Peg.Lazarus;
 using UnityEngine;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
 
     /// <summary>

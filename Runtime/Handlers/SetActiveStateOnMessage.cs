@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System;
-using Toolbox.Messaging;
-using Toolbox.Lazarus;
-using Toolbox.AutoCreate;
+using Peg.Messaging;
+using Peg.Lazarus;
+using Peg.AutoCreate;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Used to activate or deactivate various GameObjects or components when a a message is received.
@@ -32,9 +32,8 @@ namespace Toolbox.Behaviours
         IPoolSystem Lazarus;
 
 
-        protected override void Awake()
+        void Start()
         {
-            base.Awake();
             Lazarus = AutoCreator.AsSingleton<IPoolSystem>();
             CachedCount = TriggerCount;
         }

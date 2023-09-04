@@ -1,8 +1,8 @@
 ﻿using System;
-using Toolbox.Messaging;
+using Peg.Messaging;
 using UnityEngine;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Plays a list of ParticleSystems upon receving a message.

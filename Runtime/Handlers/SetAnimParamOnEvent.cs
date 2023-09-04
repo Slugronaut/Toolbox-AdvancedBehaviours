@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using static Toolbox.Behaviours.SetAnimParamOnMessage;
+using static Peg.Behaviours.SetAnimParamOnMessage;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Sets a named animator parameter when a trigger on this GameObject is struck.

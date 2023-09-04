@@ -1,11 +1,11 @@
-﻿using Toolbox.AutoCreate;
-using Toolbox.Lazarus;
-using Toolbox.Math;
-using Toolbox.Messaging;
+﻿using Peg.AutoCreate;
+using Peg.Lazarus;
+using Peg.Lib;
+using Peg.Messaging;
 using UnityEngine;
 
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Spawns a recycle-pooled object upon receiving a local event.

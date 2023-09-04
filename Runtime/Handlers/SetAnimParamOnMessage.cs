@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections;
-using Toolbox.Messaging;
+using Peg.Messaging;
 using UnityEngine;
 
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Sets a named animator parameter when a Unity event occurs on this GameObject.

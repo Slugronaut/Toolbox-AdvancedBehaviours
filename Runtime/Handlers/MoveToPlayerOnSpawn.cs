@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Attach to a GameObject that you want to teleport to

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Attach to a GameObject that should move to the 2D world-space location clicked by the mouse.

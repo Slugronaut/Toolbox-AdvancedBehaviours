@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     public class ChangeScaleOnEvent : AbstractOperationOnEvent
     {

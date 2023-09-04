@@ -1,8 +1,9 @@
-﻿using Sirenix.OdinInspector;
+﻿using Peg.Systems;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Used to transition to new scenes with smooth effects like screen fade and BGM corssfade.

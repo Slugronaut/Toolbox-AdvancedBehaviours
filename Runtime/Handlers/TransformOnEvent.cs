@@ -2,7 +2,7 @@
 using UnityEngine;
 
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Translates, rotates, and scales this entity on the given unity event.

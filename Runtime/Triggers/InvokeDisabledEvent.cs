@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Invokes an event when disabled.

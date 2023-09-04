@@ -1,7 +1,7 @@
-﻿using Toolbox.AutoCreate;
-using Toolbox.Lazarus;
+﻿using Peg.AutoCreate;
+using Peg.Lazarus;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Drains all Lazarus pools when triggered by a standard Untity Event.

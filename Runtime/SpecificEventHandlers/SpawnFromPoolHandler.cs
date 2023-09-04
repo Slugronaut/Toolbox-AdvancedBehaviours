@@ -1,12 +1,12 @@
 ﻿using Sirenix.OdinInspector;
-using Toolbox.AutoCreate;
-using Toolbox.Lazarus;
-using Toolbox.Math;
+using Peg.AutoCreate;
+using Peg.Lazarus;
 using UnityEngine;
 using UnityEngine.Assertions;
-using static Toolbox.Behaviours.SpawnFromPoolOnEvent;
+using static Peg.Behaviours.SpawnFromPoolOnEvent;
+using Peg.Lib;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Simple event handlers that can be linked to UnityEvents in the inspector in

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Sets an object's parent to a local player avatar when one spawns.

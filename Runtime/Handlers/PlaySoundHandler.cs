@@ -1,9 +1,9 @@
 ﻿using Sirenix.OdinInspector;
 using UnityEngine;
-using Toolbox.Math;
 using System;
+using Peg.Lib;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Ultimate sound playing utility.
@@ -83,7 +83,7 @@ namespace Toolbox.Behaviours
     /// 
     /// </summary>
     [Serializable]
-    public class WeightedAudioClip : Toolbox.Math.WeightedValue<AudioClip>
+    public class WeightedAudioClip : WeightedValue<AudioClip>
     {
     }
 

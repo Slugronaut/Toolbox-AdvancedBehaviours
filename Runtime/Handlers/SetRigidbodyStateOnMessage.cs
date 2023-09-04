@@ -1,9 +1,9 @@
 ﻿using System;
 using UnityEngine;
 using Sirenix.OdinInspector;
-using Toolbox.Messaging;
+using Peg.Messaging;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Sets various states of a rigidbody when a message is handled.

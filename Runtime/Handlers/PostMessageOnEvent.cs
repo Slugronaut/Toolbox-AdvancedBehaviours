@@ -1,6 +1,6 @@
-﻿using Toolbox.Messaging;
+﻿using Peg.Messaging;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Posts a simple message when this GameObject has a built-in Unity event triggered on it.

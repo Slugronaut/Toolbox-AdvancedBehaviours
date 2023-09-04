@@ -2,7 +2,7 @@
 using UnityEngine;
 
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Blends the settings of a light source over time upong being triggered by a Unity event.

@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.Assertions;
-using Toolbox.Lazarus;
-using Toolbox.AutoCreate;
+using Peg.Lazarus;
+using Peg.AutoCreate;
+using Peg.Lib;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Spawns a recycle-pooled object upon receiving a local event.

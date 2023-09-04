@@ -1,11 +1,11 @@
 ﻿using System;
-using Toolbox.Messaging;
+using Peg.Messaging;
 using UnityEngine;
 #if UNITY_2017_1_OR_NEWER
 using UnityEngine.Playables;
 #endif
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Plays a Timeline playable upon receiving a message.

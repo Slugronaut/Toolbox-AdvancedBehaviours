@@ -3,7 +3,7 @@
 using UnityEngine.Playables;
 #endif
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Plays a Timeline playable upon receiving a message.

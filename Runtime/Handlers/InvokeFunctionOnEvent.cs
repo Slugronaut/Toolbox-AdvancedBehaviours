@@ -1,5 +1,5 @@
 ﻿
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Invokes functions attached to the supplied UnityEvents of this component.

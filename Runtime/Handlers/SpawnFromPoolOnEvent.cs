@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
 using Sirenix.OdinInspector;
 using System;
-using Random = UnityEngine.Random;
-using Toolbox.Math;
-using Toolbox.AutoCreate;
-using Toolbox.Lazarus;
+using Peg.AutoCreate;
+using Peg.Lazarus;
+using Peg.Lib;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
 
     /// <summary>

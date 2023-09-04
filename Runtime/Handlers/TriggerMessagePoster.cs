@@ -1,7 +1,7 @@
 ﻿
-using Toolbox.Messaging;
+using Peg.Messaging;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Concrete implementation of an Abstract message poster.

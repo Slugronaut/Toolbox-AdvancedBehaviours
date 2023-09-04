@@ -1,8 +1,8 @@
-﻿using Toolbox.Behaviours;
+﻿using Peg.Behaviours;
 using UnityEngine;
 
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Removes all children from this object and optionally destroys it.

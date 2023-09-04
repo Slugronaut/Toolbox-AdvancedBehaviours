@@ -1,12 +1,12 @@
 ﻿using Sirenix.OdinInspector;
-using Toolbox.AutoCreate;
-using Toolbox.Lazarus;
-using Toolbox.Math;
-using Toolbox.Messaging;
+using Peg.AutoCreate;
+using Peg.Lazarus;
+using Peg.Messaging;
 using UnityEngine;
-using static Toolbox.Behaviours.SpawnFromPoolOnEvent;
+using static Peg.Behaviours.SpawnFromPoolOnEvent;
+using Peg.Lib;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Spawns a recycle-pooled object upon receiving a local event.

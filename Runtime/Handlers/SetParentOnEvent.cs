@@ -1,8 +1,8 @@
-﻿using Toolbox.Behaviours;
+﻿using Peg.Behaviours;
 using UnityEngine;
 
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Sets the parent of a set of GameObjects when the specified Unity event occurs.

@@ -1,8 +1,8 @@
-﻿using Toolbox.Messaging;
+﻿using Peg.Messaging;
 using UnityEngine;
 
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Plays a sound randomly from a list upn receiving a message.

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Sets a transform's orientation upon a Unity event.

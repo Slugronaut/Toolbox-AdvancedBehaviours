@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using Sirenix.OdinInspector;
-using Toolbox.Math;
 using System;
+using Peg.Lib;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Sets the position, rotation and / or scale of a Transform when a Unity Event is triggered.

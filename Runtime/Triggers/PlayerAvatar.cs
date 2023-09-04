@@ -1,8 +1,8 @@
-﻿using Toolbox.Messaging;
+﻿using Peg.Messaging;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Toolbox.Behaviours
+namespace Peg.Behaviours
 {
     /// <summary>
     /// Attach this component to the player avatar to make it broadcast
