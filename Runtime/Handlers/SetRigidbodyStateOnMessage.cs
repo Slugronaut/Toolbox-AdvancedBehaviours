@@ -2,6 +2,7 @@
 using UnityEngine;
 using Sirenix.OdinInspector;
 using Peg.Messaging;
+using Peg.AutonomousEntities;
 
 namespace Peg.Behaviours
 {

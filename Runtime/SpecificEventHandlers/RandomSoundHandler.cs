@@ -23,14 +23,14 @@ namespace Peg.Behaviours
         public AudioClip[] Sounds;
         
 
-        float LastTime;
+        double LastTime;
 
 
         public void Handle()
         {
             if (Sounds == null || Sounds.Length < 1) return;
 
-            float t = Time.time;
+            double t = Time.timeAsDouble;
             if (Cooldown > 0 && t - LastTime < Cooldown) return;
             LastTime = t;
 

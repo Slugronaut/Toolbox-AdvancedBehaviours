@@ -23,10 +23,10 @@ namespace Peg.Behaviours
         {
             public Color Color;
             public float Intensity;
-            public float BlendTime;
+            public double BlendTime;
 
 
-            public AmbientRequest(Color color, float intensity, float time)
+            public AmbientRequest(Color color, float intensity, double time)
             {
                 Color = color;
                 Intensity = intensity;
@@ -61,7 +61,7 @@ namespace Peg.Behaviours
         
         public override void PerformOp()
         {
-            From = new AmbientRequest(RenderSettings.ambientLight, RenderSettings.ambientIntensity, Time.time);
+            From = new AmbientRequest(RenderSettings.ambientLight, RenderSettings.ambientIntensity, Time.timeAsDouble);
             To = new AmbientRequest(Color, Intensity, BlendTime);
 
             //unlike Lights, we can only have one AmbientLight blend at a time,
@@ -88,10 +88,10 @@ namespace Peg.Behaviours
                 float i;
                 var from = From;
                 var to = To;
-                float executionTime = Time.time - from.BlendTime;
-                float percent = to.BlendTime <= 0 ? 1 : executionTime / to.BlendTime;
+                double executionTime = Time.timeAsDouble - from.BlendTime;
+                double percent = to.BlendTime <= 0 ? 1 : executionTime / to.BlendTime;
 
-                from.BlendTo(to, percent, out c, out i);
+                from.BlendTo(to, (float)percent, out c, out i);
                 AmbientRequest.ApplyToScene(c, i);
 
                 if (percent >= 1)

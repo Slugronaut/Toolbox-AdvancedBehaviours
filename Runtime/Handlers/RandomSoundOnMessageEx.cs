@@ -25,7 +25,7 @@ namespace Peg.Behaviours
         [Tooltip("A list of audio clips to randomly choosen to play upon receiving the given message.")]
         public AudioClip[] Sounds;
 
-        float LastTime = float.MinValue;
+        double LastTime = float.MinValue;
         public static string PlaySoundFunc = "PlaySound";
 
 
@@ -37,7 +37,7 @@ namespace Peg.Behaviours
 
         void PlaySound()
         {
-            float t = Time.time;
+            double t = Time.timeAsDouble;
             if (t - LastTime < Cooldown)
                 return;
 

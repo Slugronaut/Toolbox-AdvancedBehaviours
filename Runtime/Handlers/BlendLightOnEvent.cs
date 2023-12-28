@@ -28,10 +28,10 @@ namespace Peg.Behaviours
             public Color Color;
             public float Radius;
             public float Intensity;
-            public float BlendTime;
+            public double BlendTime;
 
 
-            public LightRequest(Light light, Color color, float radius, float intensity, float time)
+            public LightRequest(Light light, Color color, float radius, float intensity, double time)
             {
                 Light = light;
                 Color = color;
@@ -100,7 +100,7 @@ namespace Peg.Behaviours
         public override void PerformOp()
         {
             Pending.Add(new Tuple<LightRequest, LightRequest>(
-                new LightRequest(Light, Light.color, Light.range, Light.intensity, Time.time), 
+                new LightRequest(Light, Light.color, Light.range, Light.intensity, Time.timeAsDouble), 
                 new LightRequest(Light, Color, Radius, Intensity, BlendTime)));
 
 
@@ -120,10 +120,10 @@ namespace Peg.Behaviours
                 {
                     var from = pen.Item1;
                     var to = pen.Item2;
-                    float executionTime = Time.time - from.BlendTime;
-                    float percent = BlendTime / executionTime;
+                    double executionTime = Time.timeAsDouble - from.BlendTime;
+                    double percent = BlendTime / executionTime;
 
-                    from.BlendTo(to, percent, out Color c, out float r, out float i);
+                    from.BlendTo(to, (float)percent, out Color c, out float r, out float i);
                     LightRequest.ApplyToLight(to.Light, c, r, i);
 
                     if(percent >= 1)

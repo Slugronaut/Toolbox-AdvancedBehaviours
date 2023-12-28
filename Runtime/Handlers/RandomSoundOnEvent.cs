@@ -14,6 +14,8 @@ namespace Peg.Behaviours
         public AudioSource ManualSource;
         [Tooltip("If a previous sound was playing, should we interrupt it or overlap it with the new sound?")]
         public bool InterruptPrevious = false;
+        [Tooltip("The volume at which to play the sound.")]
+        public float Volume = 1.0f;
         [Tooltip("The index of the TempAudioSourcePlayer's audio source to use. Only needed if SourceOverride is null. Leave at 0 if not sure as that is always guaranteed to exist.")]
         public int TempAudioId = 0;
         [Tooltip("A list of audio clips to randomly choosen to play upon receiving the given message.")]
@@ -33,7 +35,7 @@ namespace Peg.Behaviours
             else
             {
                 if (InterruptPrevious) TempAudioSourcePlayer.Instance.StopLastAndPlayNew(TempAudioId, GetInstanceID(), clip, transform.position);
-                else TempAudioSourcePlayer.Instance.Play(TempAudioId, clip, transform.position);
+                else TempAudioSourcePlayer.Instance.Play(TempAudioId, clip, transform.position, Volume);
             }
         }
     }

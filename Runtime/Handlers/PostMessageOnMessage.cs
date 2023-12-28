@@ -1,5 +1,7 @@
 ﻿using System;
 using Peg.Attributes;
+using Peg.AutonomousEntities;
+using Peg.MessageDispatcher;
 using Peg.Messaging;
 using UnityEngine;
 using static Peg.Messaging.AbstractMessagePoster;

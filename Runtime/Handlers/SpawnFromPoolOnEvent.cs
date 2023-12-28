@@ -164,7 +164,7 @@ namespace Peg.Behaviours
         [Tooltip("One of these will randomly be spawned.")]
         public WeightedGameObject[] Prefabs;
 
-        float LastTime;
+        double LastTime;
         byte LastIndex;
         IPoolSystem Lazarus;
         const float HeightOffset = 0.05f;
@@ -180,9 +180,9 @@ namespace Peg.Behaviours
         public override void PerformOp()
         {
             if (Prefabs == null || Prefabs.Length < 1) return;
-            if (Cooldown > 0 && Time.time - LastTime < Cooldown)
+            if (Cooldown > 0 && Time.timeAsDouble - LastTime < Cooldown)
                 return;
-            LastTime = Time.time;
+            LastTime = Time.timeAsDouble;
             Vector3 jitter = Jitter; //todo: randomize this
             var myPos = transform.position + Offset + jitter;
             GameObject prefab = null;

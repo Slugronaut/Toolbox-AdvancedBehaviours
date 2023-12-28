@@ -6,7 +6,7 @@ using UnityEngine.Events;
 using Sirenix.OdinInspector;
 using Peg.Systems;
 
-namespace Peg
+namespace Peg.Behaviours
 {
     public class FadeScreenOnMessage : AbstractMessageReciever
     {

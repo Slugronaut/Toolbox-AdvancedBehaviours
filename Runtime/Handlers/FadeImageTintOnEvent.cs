@@ -17,7 +17,7 @@ namespace Peg.Behaviours
         [Title("Fade Settings")]
         public Image Image;
         public Gradient Fade;
-        public float FadeTime = 1f;
+        public double FadeTime = 1f;
         [Tooltip("Does pressing any button (but not axis) skip the fade effect?")]
         public bool AnyButtonSkips;
         public UnityEvent OnFadeStart = new UnityEvent();
@@ -58,8 +58,8 @@ namespace Peg.Behaviours
         IEnumerator FadeRoutine()
         {
             OnFadeStart.Invoke();
-            float start = Time.time;
-            while (Time.time - start < FadeTime)
+            double start = Time.timeAsDouble;
+            while (Time.timeAsDouble - start < FadeTime)
             {
 #if REWIRED
                 if(ButtonDown)
@@ -70,7 +70,7 @@ namespace Peg.Behaviours
                 else if(AnyButtonSkips && GetMenuInput().GetAnyButtonUp())
                     break;
 #endif
-                Image.color = Fade.Evaluate((Time.time - start) / FadeTime);
+                Image.color = Fade.Evaluate((float)((Time.timeAsDouble - start) / FadeTime));
                 yield return null;
             }
             Image.color = Fade.Evaluate(1);

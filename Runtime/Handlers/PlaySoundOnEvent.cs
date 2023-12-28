@@ -34,7 +34,7 @@ namespace Peg.Behaviours
         public WeightedAudioClip[] Sounds;
 
 
-        float LastTime = 0;
+        double LastTime = 0;
         //bool IsSourceOverrideNull => SourceOverride == null;
         //bool IsUsingSelectionIndex => SelectionMode == WeightedSelectionModes.Specific;
 
@@ -49,8 +49,8 @@ namespace Peg.Behaviours
         void PlaySound()
         {
             if (Sounds == null || Sounds.Length < 1) return;
-            if (Time.time - LastTime < Cooldown) return;
-            LastTime = Time.time;
+            if (Time.timeAsDouble - LastTime < Cooldown) return;
+            LastTime = Time.timeAsDouble;
 
             if(SelectionMode == WeightedSelectionModes.All)
             {
