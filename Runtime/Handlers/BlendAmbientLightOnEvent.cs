@@ -69,6 +69,12 @@ namespace Peg.Behaviours
             //need to track a unique id for each instance.
             if (Queue == null || CurrentBlendId != this.GetInstanceID())
             {
+                //skip the coroutine if we are using instant-time. this also allows us to use this when trigged by disabled events
+                if(BlendTime <= 0)
+                {
+                    AmbientRequest.ApplyToScene(Color, Intensity);
+                    return;
+                }
                 CurrentBlendId = this.GetInstanceID();
                 if(Queue != null) StopCoroutine(Queue);
                 Queue = StartCoroutine(BlendLight());
