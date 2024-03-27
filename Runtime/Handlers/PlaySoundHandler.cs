@@ -38,8 +38,8 @@ namespace Peg.Behaviours
 
 
         double LastTime = 0;
-        //bool IsSourceOverrideNull => SourceOverride == null;
-        //bool IsUsingSelectionIndex => SelectionMode == WeightedSelectionModes.Specific;
+        bool IsSourceOverrideNull => SourceOverride == null;
+        bool IsUsingSelectionIndex => SelectionMode == WeightedSelectionModes.Specific;
 
         public void PlaySound()
         {
